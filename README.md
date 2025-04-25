@@ -40,3 +40,6 @@ ADCSRA |= (1 << ADSC)
 - ADIE in ADCSRA setzen  
 - Globale Interrupts aktivieren mit `sei()`  
 - ISR definieren:
+ISR(ADC_vect) {
+    uint16_t wert = ADC;
+}
